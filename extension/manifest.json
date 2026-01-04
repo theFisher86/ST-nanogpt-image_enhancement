@@ -1,0 +1,11 @@
+{
+  "display_name": "NanoGPT Image Enhancer",
+  "loading_order": 25,
+  "requires": [],
+  "optional": ["sd"],
+  "js": "index.js",
+  "css": "style.css",
+  "author": "OpenAI Assistant",
+  "version": "0.1.0",
+  "homePage": "https://github.com/SillyTavern/SillyTavern"
+}

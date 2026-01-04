@@ -1,0 +1,41 @@
+<div id="nanogpt_enhancer_settings" class="nanogpt-enhancer">
+    <h3 class="nano-heading">NanoGPT Image Enhancer</h3>
+    <p class="nano-description">
+        Add Flux.2 LoRA URLs and reference images to NanoGPT image generation requests. Reference images are stored as base64 JPEG (max 4MB).
+    </p>
+    <div class="nano-section">
+        <div class="nano-section-header">
+            <span class="nano-section-title">Flux.2 [dev] LoRA URLs</span>
+            <span id="nanogpt_lora_notice" class="nano-hint">Select the Flux.2 [dev] LoRA model to edit these URLs.</span>
+        </div>
+        <div id="nanogpt_lora_fields" class="nano-grid">
+            <label class="nano-field">
+                <span>LoRA URL 1</span>
+                <input id="nanogpt_lora_url_1" type="text" class="text_pole" value="{{lora_url_1}}" placeholder="https://example.com/lora1" />
+            </label>
+            <label class="nano-field">
+                <span>LoRA URL 2</span>
+                <input id="nanogpt_lora_url_2" type="text" class="text_pole" value="{{lora_url_2}}" placeholder="https://example.com/lora2" />
+            </label>
+            <label class="nano-field">
+                <span>LoRA URL 3</span>
+                <input id="nanogpt_lora_url_3" type="text" class="text_pole" value="{{lora_url_3}}" placeholder="https://example.com/lora3" />
+            </label>
+            <label class="nano-field">
+                <span>LoRA URL 4</span>
+                <input id="nanogpt_lora_url_4" type="text" class="text_pole" value="{{lora_url_4}}" placeholder="https://example.com/lora4" />
+            </label>
+        </div>
+    </div>
+    <div class="nano-section">
+        <div class="nano-section-header">
+            <span class="nano-section-title">Reference Images</span>
+            <span class="nano-hint">JPEGs are resized if they exceed 4MB. Stored locally in your settings.</span>
+        </div>
+        <div class="nano-ref-actions">
+            <input id="nanogpt_reference_upload" type="file" accept="image/*" hidden />
+            <button type="button" id="nanogpt_reference_browse" class="menu_button">Browse</button>
+        </div>
+        <div id="nanogpt_reference_list" class="nano-ref-grid"></div>
+    </div>
+</div>
